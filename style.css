@@ -1,0 +1,43 @@
+.casio {
+  position: absolute;
+  top: 70px;
+  left: 440px;
+  font-family: fantasy;
+  font-weight: normal;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: rgb(173, 171, 168);
+}
+
+.button {
+  padding: 20px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid rgb(211, 209, 209);
+}
+.button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: 150ms all ease-in;
+}
+
+.container {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(168, 149, 114);
+  flex-direction: column;
+  border: 6px solid black;
+  padding: 90px 0 20px 0;
+  margin: auto;
+  max-width: 40vw;
+}
+.row input {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(203, 203, 195);
+}
