@@ -1,43 +1,63 @@
-.casio {
-  position: absolute;
-  top: 70px;
-  left: 440px;
-  font-family: fantasy;
-  font-weight: normal;
-  border: 1px solid black;
-  padding: 3px;
-  background-color: rgb(173, 171, 168);
-}
-
-.button {
-  padding: 20px;
-  background-color: black;
-  color: whitesmoke;
-  border-radius: 10px;
-  border: 2px solid rgb(211, 209, 209);
-}
-.button:hover {
-  background-color: whitesmoke;
-  color: black;
-  transition: 150ms all ease-in;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
 .container {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(168, 149, 114);
-  flex-direction: column;
-  border: 6px solid black;
-  padding: 90px 0 20px 0;
-  margin: auto;
-  max-width: 40vw;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
-.row input {
-  font-size: 18px;
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+h1.text-center {
+  text-align: center;
+}
+
+.casio {
+  color: #333;
+  margin: 0;
+}
+
+.input {
+  width: 100%;
   padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: 1px solid black;
-  background-color: rgb(203, 203, 195);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 5px; /* Add margin between buttons */
+}
+
+.button:last-child {
+  margin-right: 0; /* Remove margin from the last button in each row */
+}
+
+.button:hover {
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
 }
